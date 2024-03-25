@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.GameController">
+    <children>
+        <StackPane fx:id="hexMap" layoutX="150.0" layoutY="36.0" prefHeight="500.0" prefWidth="500.0" />
+      <HBox layoutX="183.0" layoutY="571.0" prefHeight="145.0" prefWidth="442.0">
+         <children>
+            <ListView fx:id="playerTileList" orientation="HORIZONTAL" prefHeight="145.0" prefWidth="442.0" />
+         </children>
+      </HBox>
+    </children>
+</AnchorPane>

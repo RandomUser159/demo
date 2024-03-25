@@ -1,0 +1,127 @@
+[
+  {
+    "area": "swamp",
+    "animal": "salmon",
+    "image": "singlePlates/swamp-salmon-key.png"
+  },
+  {
+    "area": "swamp",
+    "animal": "salmon",
+    "image": "singlePlates/swamp-salmon-key.png"
+  },
+  {
+    "area": "swamp",
+    "animal": "fox",
+    "image": "singlePlates/swamp-fox-key.png"
+  },
+  {
+    "area": "swamp",
+    "animal": "fox",
+    "image": "singlePlates/swamp-fox-key.png"
+  },
+  {
+    "area": "swamp",
+    "animal": "hawk",
+    "image": "singlePlates/swamp-hawk-key.png"
+  },
+  {
+    "area": "lake",
+    "animal": "hawk",
+    "image": "singlePlates/lake-hawk-key.png"
+  },
+  {
+    "area": "lake",
+    "animal": "hawk",
+    "image": "singlePlates/lake-hawk-key.png"
+  },
+  {
+    "area": "lake",
+    "animal": "bear",
+    "image": "singlePlates/lake-bear-key.png"
+  },
+  {
+    "area": "lake",
+    "animal": "bear",
+    "image": "singlePlates/lake-bear-key.png"
+  },
+  {
+    "area": "lake",
+    "animal": "salmon",
+    "image": "singlePlates/lake-salmon-key.png"
+  },
+  {
+    "area": "mountain",
+    "animal": "bear",
+    "image": "singlePlates/mountain-bear-key.png"
+  },
+  {
+    "area": "mountain",
+    "animal": "hawk",
+    "image": "singlePlates/mountain-hawk-key.png"
+  },
+  {
+    "area": "mountain",
+    "animal": "hawk",
+    "image": "singlePlates/mountain-hawk-key.png"
+  },
+  {
+    "area": "mountain",
+    "animal": "elk",
+    "image": "singlePlates/mountain-elk-key.png"
+  },
+  {
+    "area": "mountain",
+    "animal": "elk",
+    "image": "singlePlates/mountain-elk-key.png"
+  },
+  {
+    "area": "desert",
+    "animal": "elk",
+    "image": "singlePlates/desert-elk-key.png"
+  },
+  {
+    "area": "desert",
+    "animal": "elk",
+    "image": "singlePlates/desert-elk-key.png"
+  },
+  {
+    "area": "desert",
+    "animal": "fox",
+    "image": "singlePlates/desert-fox-key.png"
+  },
+  {
+    "area": "desert",
+    "animal": "salmon",
+    "image": "singlePlates/desert-salmon-key.png"
+  },
+  {
+    "area": "desert",
+    "animal": "salmon",
+    "image": "singlePlates/desert-salmon-key.png"
+  },
+  {
+    "area": "forest",
+    "animal": "fox",
+    "image": "singlePlates/forest-fox-key.png"
+  },
+  {
+    "area": "forest",
+    "animal": "fox",
+    "image": "singlePlates/forest-fox-key.png"
+  },
+  {
+    "area": "forest",
+    "animal": "bear",
+    "image": "singlePlates/forest-bear-key.png"
+  },
+  {
+    "area": "forest",
+    "animal": "bear",
+    "image": "singlePlates/forest-bear-key.png"
+  },
+  {
+    "area": "forest",
+    "animal": "elk",
+    "image": "singlePlates/forest-elk-key.png"
+  }
+]
