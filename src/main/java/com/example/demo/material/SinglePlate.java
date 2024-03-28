@@ -2,13 +2,15 @@ package com.example.demo.material;
 
 import javafx.scene.image.Image;
 
+import java.util.Objects;
+
 public class SinglePlate {
     private String area;
 
     private String animal;
 
     private String image;
-
+    private Image ImageVisual;
     public SinglePlate(){}
 
     public void setAnimal(String animal) {
@@ -33,6 +35,9 @@ public class SinglePlate {
 
     public String getImage() {
         return image;
+    }
+    public Image loadImage() {
+        return new Image(Objects.requireNonNull(getClass().getResourceAsStream(image)));
     }
 
     @Override

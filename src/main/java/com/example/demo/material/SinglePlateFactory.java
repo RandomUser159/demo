@@ -12,16 +12,19 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class SinglePlateFactory {
-    private ArrayList<SinglePlate> singlePlates;
-    private SinglePlate singlePlate;
+    private final ArrayList<SinglePlate> singlePlates;
+
     public SinglePlateFactory() throws JsonProcessingException, JsonMappingException, IOException {
         ObjectMapper objectMapper = new ObjectMapper();
-        ArrayList<SinglePlate> singlePlates;
         try {
             this.singlePlates = objectMapper.readValue(new File("src/main/resources/com/example/demo/singlePlateMaterial.json"),new TypeReference<>(){});
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+        singlePlates.forEach(System.out::println);
     }
 
+    public ArrayList<SinglePlate> getSinglePlates() {
+        return singlePlates;
+    }
 }

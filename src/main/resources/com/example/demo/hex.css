@@ -1,7 +1,10 @@
 .hex-tile {
-    -fx-fill: lightgray; /* Standard background color */
+
 }
 
 .hex-tile:hover {
-    -fx-stroke: blue; /* Border color on hover */
+    -fx-stroke: blue;
 }
+
+
+

@@ -1,36 +1,26 @@
 package com.example.demo.map;
 
 import javafx.geometry.Point2D;
+import javafx.scene.Scene;
 import javafx.scene.input.MouseButton;
 
 public class HexTileBuilder {
     // Die Größe eines Hexagons. Radius vom Mittelpunkt zu einem der Ecken.
     private final double size;
-    private final double width;
-    private final double height;
-    private final double verticalDistance;
+
+
+
 
     // Konstruktor
     public HexTileBuilder(double size) {
         this.size = size;
-        this.width = Math.sqrt(3) * size;
-        this.height = 2 * size;
-        this.verticalDistance = (2 * size) * 3/4;
     }
 
     public HexTile createHexTile(int q, int r) {
         HexTile hexagon = new HexTile(q, r);
         double centerX = calculateCenterX(q, r);
         double centerY = calculateCenterY(r);
-
         hexagon.getStyleClass().add("hex-tile");
-
-        hexagon.setOnMouseClicked(event -> {
-            if (event.getButton() == MouseButton.PRIMARY) {
-                System.out.println("HexTile geklickt bei: q=" + q + ", r=" + r + ", s=" + (-q-r) + ", pointX=" + hexagon.getPoint().getX());
-                System.out.println("pointX=" + hexagon.getPoint().getX() + ", pointY=" + hexagon.getPoint().getY());
-            }
-        });
 
         Point2D point2D = new Point2D(centerX, centerY);
         hexagon.setPoint(point2D);
