@@ -5,7 +5,7 @@
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#initialize" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.GameController">
     <children>
         <StackPane fx:id="hexMap" layoutX="150.0" layoutY="36.0" prefHeight="500.0" prefWidth="500.0" />
-      <GridPane alignment="CENTER" layoutX="206.0" layoutY="557.0" prefHeight="158.0" prefWidth="380.0">
+      <GridPane fx:id="tileTokenGrid" alignment="CENTER" layoutX="220.0" layoutY="609.0" prefHeight="145.0" prefWidth="360.0">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />

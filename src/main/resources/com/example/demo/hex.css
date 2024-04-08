@@ -1,10 +1,15 @@
 .hex-tile {
-
+    -fx-fill: grey;
 }
 
 .hex-tile:hover {
     -fx-stroke: blue;
 }
 
+.player-tile{
 
+}
+.player-tile:hover{
+    -fx-stroke: blue;
+}
 

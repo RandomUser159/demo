@@ -1,0 +1,42 @@
+[
+  [
+    {
+      "type": "singletile",
+      "allowedTokenTypes": ["HAWK"],
+      "terrainTypes": ["SWAMP"],
+      "imagePath" : "startingPlates1/swamp-hawk-key.png"
+    },
+    {
+      "type": "doubletile",
+      "allowedTokenTypes": ["SALMON", "ELK", "HAWK"],
+      "terrainTypes": ["LAKE","LAKE","LAKE","FOREST","FOREST","FOREST"],
+      "imagePath" : "startingPlates1/forest+lake-salmon-elk-hawk.png"
+    },
+    {
+    "type": "doubletile",
+    "allowedTokenTypes": ["BEAR", "FOX"],
+    "terrainTypes": ["DESERT","DESERT","DESERT","MOUNTAIN","MOUNTAIN","MOUNTAIN"],
+    "imagePath" : "startingPlates1/forest+lake-salmon-elk-hawk.png"
+    }
+  ],
+  [
+    {
+      "type": "singletile",
+      "allowedTokenTypes": ["ELK"],
+      "terrainTypes": ["FOREST"],
+      "imagePath" : "startingPlates2/forest-elk-key.png"
+    },
+    {
+      "type": "doubletile",
+      "allowedTokenTypes": ["HAWK","ELK","BEAR"],
+      "terrainTypes": ["MOUNTAIN","MOUNTAIN","MOUNTAIN","LAKE","LAKE","LAKE"],
+      "imagePath" : "startingPlates2/lake+mountain-hawk-elk-bear.png"
+    },
+    {
+    "type": "doubletile",
+    "allowedTokenTypes": ["FOX","SALMON"],
+    "terrainTypes": ["SWAMP","SWAMP","SWAMP","DESERT","DESERT","DESERT"],
+    "imagePath" : "startingPlates2/desert+swamp-fox-salmon.png"
+  }
+  ]
+]

@@ -1,26 +1,25 @@
 package com.example.demo.map;
 
-import com.example.demo.material.SinglePlate;
+import com.example.demo.NeighbourArrayList;
+import com.example.demo.Tile.PlayerTile;
 import javafx.beans.property.BooleanProperty;
 import javafx.beans.property.SimpleBooleanProperty;
-import javafx.beans.value.ObservableBooleanValue;
-import javafx.beans.value.ObservableValue;
 import javafx.geometry.Point2D;
-import javafx.scene.input.KeyCode;
-import javafx.scene.input.KeyEvent;
-import javafx.scene.input.MouseButton;
+import javafx.scene.image.Image;
 import javafx.scene.paint.ImagePattern;
 import javafx.scene.shape.Polygon;
 
 import java.util.Objects;
 
 public class HexTile extends Polygon {
-    // Koordinaten des Hexagons
-    private int q; // Die X-Koordinate
-    private int r; // Die Y-Koordinate
-    private int s; // Die Z-Koordinate, die aus q und r berechnet wird, um die Integrität des Koordinatensystems zu gewährleisten
+    private final BooleanProperty selected = new SimpleBooleanProperty(false);
+    private final BooleanProperty ableToBeOccupied = new SimpleBooleanProperty(false);
+    private NeighbourArrayList<HexTile> neighbours = new NeighbourArrayList<>();
+    private int q;
+    private int r;
+    private int s;
     private Point2D point;
-    private double angel = 0;
+    private PlayerTile playerTile;
 
     //private SinglePlate singlePlate;
     // Konstruktor
@@ -31,26 +30,9 @@ public class HexTile extends Polygon {
         if(this.q + this.r + this.s != 0){
             throw  new IllegalArgumentException("q + r + s must be 0");
         }
-        this.setOnMouseClicked(event -> {
-            if (event.getButton() == MouseButton.PRIMARY) {
-               this.requestFocus();
-                this.setOnKeyPressed(event1 -> {
-                    switch (event1.getCode()){
-                        case RIGHT:
-                            this.angel += 60;
-                            this.setRotate(angel);
-                            break;
-                        case LEFT:
-                            this.angel -= 60;
-                            this.setRotate(angel);
-                            break;
-                        default:
-                            break;
-                    }
-                    event1.consume();
-                });
-            }
-        });
+
+    }
+    public HexTile(){
 
     }
 
@@ -83,21 +65,11 @@ public class HexTile extends Polygon {
         return s;
     }
 
-    public void setS(int s) {
-        this.s = s;
+    public void setS() {
+        this.s = -q -r;
         if(this.q + this.r + this.s != 0){
             throw  new IllegalArgumentException("q + r + s must be 0");
         }
-    }
-
-    @Override
-    public String toString() {
-        return "HexTile{" +
-                "q=" + q +
-                ", r=" + r +
-                ", s=" + s +
-                ", point=" + point +
-                '}';
     }
 
     public void setPoint(Point2D point) {
@@ -108,4 +80,25 @@ public class HexTile extends Polygon {
         return point;
     }
 
+    public PlayerTile getPlayerTile() {
+        return playerTile;
+    }
+
+    public void setPlayerTile(PlayerTile playerTile) {
+        this.playerTile = playerTile;
+    }
+
+
+
+
+
+    @Override
+    public String toString() {
+        return "HexTile{" +
+                "q=" + q +
+                ", r=" + r +
+                ", s=" + s +
+                ", point=" + point +
+                '}';
+    }
 }

@@ -1,0 +1,42 @@
+{
+    "singleTile" : [
+      {
+        "type": "singletile",
+        "allowedTokenTypes": ["ELK"],
+        "terrainTypes": ["DESERT"],
+        "imagePath" : "singlePlates/desert-elk-key.png"
+      },
+      {
+        "type": "singletile",
+        "allowedTokenTypes": ["FOX"],
+        "terrainTypes": ["FOREST"],
+        "imagePath" : "singlePlates/forest-fox-key.png"
+      },
+      {
+        "type": "singletile",
+        "allowedTokenTypes": ["HAWK"],
+        "terrainTypes": ["LAKE"],
+        "imagePath" : "singlePlates/lake-hawk-key.png"
+      }
+    ],
+    "doubleTile": [
+      {
+        "type": "doubletile",
+        "allowedTokenTypes": ["ELK", "HAWK"],
+        "terrainTypes": ["LAKE","LAKE","LAKE","DESERT","DESERT","DESERT" ],
+        "imagePath" : "doublePlates/desert+lake-elk-hawk.png"
+      },
+      {
+        "type": "doubletile",
+        "allowedTokenTypes": ["SALMON", "FOX", "ELK"],
+        "terrainTypes": ["DESERT","DESERT","DESERT","FOREST","FOREST","FOREST" ],
+        "imagePath" : "doublePlates/forest+desert-salmon-elk-fox.png"
+      },
+      {
+        "type": "doubletile",
+        "allowedTokenTypes": ["BEAR", "FOX"],
+        "terrainTypes": ["LAKE","LAKE","LAKE","FOREST","FOREST","FOREST" ],
+        "imagePath" : "doublePlates/forest+lake-fox-bear.png"
+      }
+    ]
+}

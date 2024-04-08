@@ -13,7 +13,7 @@ public class HexMap {
     }
 
     public HexTile getTile(int q, int r){
-        return tiles.get(new Point2D(q, r));
+        return tiles.get(new HexTile(q,r).getPoint());
     }
 
     public Map<Point2D, HexTile> getTiles() {
@@ -24,4 +24,6 @@ public class HexMap {
         tiles.forEach((key, value) -> System.out.println("pointX=" + key.getX() + " pointY=" + key.getY() + "/n" +
                 "q=" + value.getQ() + " r=" + value.getR() + " s=" +value.getS()));
     }
+
+
 }

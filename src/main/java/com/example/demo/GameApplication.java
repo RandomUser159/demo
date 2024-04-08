@@ -25,5 +25,6 @@ public class GameApplication extends Application {
 
     public static void main(String[] args) throws JsonProcessingException {
         launch();
+
     }
 }

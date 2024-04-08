@@ -1,12 +1,24 @@
 package com.example.demo.map;
 
+import com.example.demo.Tile.PlayerTile;
+import com.example.demo.material.StartingTileFactory;
+import javafx.scene.image.Image;
 import javafx.scene.layout.StackPane;
+import javafx.scene.paint.ImagePattern;
+import javafx.scene.paint.Paint;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Objects;
+import java.util.Random;
 
 public class HexMapBuilder {
     private HexTileBuilder hexTileBuilder;
-    private HexMap hexMap;
+    private final HexMap hexMap;
+    private final StartingTileFactory startingTileFactory = new StartingTileFactory();
 
-    public HexMapBuilder(double size){
+    public HexMapBuilder(double size) throws IOException {
         this.hexTileBuilder = new HexTileBuilder(size);
         this.hexMap = new HexMap();
     }
@@ -23,7 +35,6 @@ public class HexMapBuilder {
                 container.getChildren().add(hexTile);
             }
         }
-
     }
 }
 
